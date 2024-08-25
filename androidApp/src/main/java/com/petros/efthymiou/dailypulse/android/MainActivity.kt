@@ -5,13 +5,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.petros.efthymiou.dailypulse.Platform
-import com.petros.efthymiou.dailypulse.android.screens.AboutScreen
-import com.petros.efthymiou.dailypulse.android.screens.ArticlesScreen
 import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
 
 class MainActivity : ComponentActivity() {
@@ -25,18 +21,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ArticlesScreen(articlesViewModel = articlesViewModel)
+                    AppScaffold(articlesViewModel = articlesViewModel)
                 }
             }
         }
-    }
-}
-
-
-@Preview
-@Composable
-fun DefaultPreview() {
-    MyApplicationTheme {
-        AboutScreen()
     }
 }

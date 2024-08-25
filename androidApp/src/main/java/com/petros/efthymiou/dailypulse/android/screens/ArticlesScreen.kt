@@ -35,11 +35,13 @@ import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
 
 @Composable
 fun ArticlesScreen(
+    onAboutButtonClick: () -> Unit,
     articlesViewModel: ArticlesViewModel
 ) {
     val articlesState = articlesViewModel.articlesState.collectAsState()
 
     Column {
+        AppBar(onAboutButtonClick)
         if (articlesState.value.loading)
             Loader()
         if (articlesState.value.error != null)
