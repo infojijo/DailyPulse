@@ -1,7 +1,9 @@
 package com.petros.efthymiou.dailypulse
 
-interface Platform {
-    val name: String
+expect class Platform {
+    val osName: String
+    val osVersion: String
+    val deviceModel: String
+    val deviceDensity: Int
+    fun getDeviceDetails()
 }
-
-expect fun getPlatform(): Platform
