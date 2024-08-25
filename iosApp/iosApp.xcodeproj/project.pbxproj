@@ -11,6 +11,7 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		83A397B62C7BE90000EFA18A /* ArticleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A397B52C7BE90000EFA18A /* ArticleScreen.swift */; };
 		83AA283B2C7AC2B10076E39D /* AboutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA283A2C7AC2B10076E39D /* AboutListView.swift */; };
 		83AA283D2C7AC3F60076E39D /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA283C2C7AC3F60076E39D /* AboutScreen.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A397B52C7BE90000EFA18A /* ArticleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleScreen.swift; sourceTree = "<group>"; };
 		83AA283A2C7AC2B10076E39D /* AboutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutListView.swift; sourceTree = "<group>"; };
 		83AA283C2C7AC3F60076E39D /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,9 +80,8 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				83A397B42C7BE8BD00EFA18A /* Screens */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				83AA283C2C7AC3F60076E39D /* AboutScreen.swift */,
-				83AA283A2C7AC2B10076E39D /* AboutListView.swift */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
@@ -94,6 +95,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83A397B42C7BE8BD00EFA18A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				83AA283C2C7AC3F60076E39D /* AboutScreen.swift */,
+				83AA283A2C7AC2B10076E39D /* AboutListView.swift */,
+				83A397B52C7BE90000EFA18A /* ArticleScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 			files = (
 				83AA283B2C7AC2B10076E39D /* AboutListView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				83A397B62C7BE90000EFA18A /* ArticleScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				83AA283D2C7AC3F60076E39D /* AboutScreen.swift in Sources */,
 			);
