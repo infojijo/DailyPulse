@@ -1,4 +1,4 @@
-package com.petros.efthymiou.dailypulse.di
+package com.petros.efthymiou.dailypulse.network.di
 
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation

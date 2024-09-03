@@ -11,6 +11,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.petros.efthymiou.dailypulse.android.screens.AboutScreen
 import com.petros.efthymiou.dailypulse.android.screens.ArticlesScreen
+import com.petros.efthymiou.dailypulse.android.screens.HeadLinesScreen
 import com.petros.efthymiou.dailypulse.android.screens.Screen
 import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
 
@@ -40,10 +41,16 @@ fun AppNavHost(
     ) {
         composable(Screen.ARTICLE.route) {
             ArticlesScreen(
-                onAboutButtonClick = { navController.navigate(Screen.ABOUT.route) }
+                onAboutButtonClick = { navController.navigate(Screen.ABOUT.route) },
+                onHeadLinesButtonClick = { navController.navigate(Screen.HEADLINES.route) }
             )
         }
-
+        composable(Screen.HEADLINES.route) {
+            HeadLinesScreen(
+                onAboutButtonClick = { navController.navigate(Screen.ABOUT.route) },
+                onArticlesButtonClick = { navController.navigate(Screen.ARTICLE.route) }
+            )
+        }
         composable(Screen.ABOUT.route) {
             AboutScreen(
                 onBackButtonClick = { navController.popBackStack() }
